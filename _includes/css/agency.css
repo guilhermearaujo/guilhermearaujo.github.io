@@ -722,6 +722,12 @@ section#contact .text-danger {
   color: #e74c3c;
 }
 
+@media(max-width: 375px) {
+  footer {
+    margin-bottom: 48px;
+  }
+}
+
 footer {
   padding: 25px 0;
   text-align: center;
