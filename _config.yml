@@ -20,15 +20,6 @@ color:
   secondary: fec503
   secondary-dark: 333
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: github
-    url: http://github.com/guilhermearaujo
-  - title: linkedin
-    url: http://br.linkedin.com/in/guilhermeamaraujo
-  - title: stack-overflow
-    url: http://stackoverflow.com/users/1262783/guilherme
-
 # Build settings
 markdown: kramdown
 permalink: pretty
