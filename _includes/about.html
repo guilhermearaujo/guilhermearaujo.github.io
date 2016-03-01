@@ -10,125 +10,24 @@
     <div class="row">
       <div class="col-lg-12">
         <ul class="timeline">
-          <li>
-            <div class="timeline-image">
-              <img class="img-circle img-responsive" src="img/about/eduk.png" alt="">
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>October 2014</h4>
-                <h4 class="subheading">Developer at eduK</h4>
+          {% for entry in site.data.about %}
+            <li {% cycle nil, 'class="timeline-inverted"' %}>
+              <div class="timeline-image">
+                <img class="img-circle img-responsive" src="img/about/{{ entry.image }}" alt="">
               </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Started working at eduK, the largest online leanrning company in Latin America.<br />
-                  Initially developed both iOS and Android apps, but later was also assigned to help developing back-end applications. Learned Ruby on Rails and SQL and scratches some HTML every once in a while.
-                </p>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>{{ entry.date }}</h4>
+                  <h4 class="subheading">{{ entry.headline }}</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    {{ entry.text }}
+                  </p>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <img class="img-circle img-responsive" src="img/about/minerva.png" alt="">
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>December 2013</h4>
-                <h4 class="subheading">Bachelor of Electric Engineering</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  After six years, receives the undergraduate degree.<br />
-                  Develops, for the Graduation project, an Automated Storage and Retrieval System model for libraries. It comprises a functional transelevator scale model, its circuitry and control systems and a web interface for books and reservations management.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-image">
-              <img class="img-circle img-responsive" src="img/about/olokal.png" alt="">
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>August 2013</h4>
-                <h4 class="subheading">Internship at oLokal</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Hired as an intern at oLokal, a startup company that connects customers to nearby shops and stores, allowing urgent purchases to be made in no time. Also starts learning and developing native Android applications.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <img class="img-circle img-responsive" src="img/about/coecsl.png" alt="">
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>March 2013</h4>
-                <h4 class="subheading">Internship at the Control Lab</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Engages on a three month internship at UIUC's Control Systems Laboratory.<br />
-                  Main activities include designing printed circuit boards, assembling circuits and developing scripts and applications for embedded Linux systems running on BeagleboneBlack devices.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-image">
-              <img class="img-circle img-responsive" src="img/about/uiuc.png" alt="">
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>August 2012</h4>
-                <h4 class="subheading">Engineering Exchange Program</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Selected for a year-long engineering exchange program in the United States at the University of Illinois at Urbana-Champaign.<br />
-                  Focuses on courses related to digital signal processing, control and mechatronics.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image">
-              <img class="img-circle img-responsive" src="img/about/ios.png" alt="">
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>January 2012</h4>
-                <h4 class="subheading">Scientific initiation</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Works as a scientific initiation student at the Departamento de Mecatrônica.<br />
-                  Learns Objective-C and iOS development. Creates a couple of apps for the University.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-image">
-              <img class="img-circle img-responsive" src="img/about/usp.png" alt="">
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>February 2008</h4>
-                <h4 class="subheading">Enter the academic world</h4>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  Begins studies in Electric Engineering at Escola Politécnica da Universidade de São Paulo.<br />
-                  First contact with programming languages, beginning with C and Python.<br />
-                  Starts tinkering with embedded systems such as Arduino and PIC microcontrollers.
-                </p>
-              </div>
-            </div>
-          </li>
+            </li>
+          {% endfor %}
         </ul>
       </div>
     </div>

@@ -1,0 +1,48 @@
+- image: eduk.png
+  date: October 2014
+  headline: Developer at eduK
+  text: >
+    Started working at <a href="http://www.eduk.com.br" target="_blank">eduK</a>, the largest online education company in Latin America.<br />
+    Initially developed both iOS and Android apps, but later was also assigned to help developing back-end applications. Learned Ruby on Rails and SQL and scratches some HTML every once in a while.
+
+- image: minerva.png
+  date: December 2013
+  headline: Bachelor of Electric Engineering
+  text: >
+    After six years, receives the undergraduate degree.<br />
+    Develops, for the Graduation project, an Automated Storage and Retrieval System model for libraries. It comprises a functional transelevator scale model, its circuitry and control systems and a web interface for books and reservations management.
+
+- image: olokal.png
+  date: August 2013
+  headline: Internship at oLokal
+  text: >
+    Hired as an intern at <a href="http://www.olokal.com.br" target="_blank">oLokal</a>, a startup company that connects customers to nearby shops and stores, allowing urgent purchases to be made in no time. Also starts learning and developing native Android applications.
+
+- image: coecsl.png
+  date: March 2013
+  headline: Internship at the Control Lab
+  text: >
+    Engages on a three month internship at UIUC's <a href="http://coecsl.ece.illinois.edu" target="_blank">Control Systems Laboratory</a>.<br />
+    Main activities include designing printed circuit boards, assembling circuits and developing scripts and applications for embedded Linux systems running on BeagleboneBlack devices.
+
+- image: uiuc.png
+  date: August 2012
+  headline: Engineering Exchange Program
+  text: >
+    Selected for a year-long engineering exchange program in the United States at the <a href="http://www.illinois.edu" target="_blank">University of Illinois at Urbana-Champaign</a>.<br />
+    Focuses on courses related to digital signal processing, control and mechatronics.
+
+- image: ios.png
+  date: January 2012
+  headline: Scientific initiation
+  text: >
+    Works as a scientific initiation student at the <a href="http://www.pmr.poli.usp.br" target="_blank">Departamento de Mecatrônica</a>.<br />
+    Learns Objective-C and iOS development. Creates a couple of apps for the University.
+
+- image: usp.png
+  date: February 2008
+  headline: Enter the academic world
+  text: >
+    Begins studies in Electric Engineering at <a href="http://www.poli.usp.br" target="_blank">Escola Politécnica</a> da <a href="http://www.usp.br" target="_blank">Universidade de São Paulo</a>.<br />
+    First contact with programming languages, beginning with C and Python.<br />
+    Starts tinkering with embedded systems such as Arduino and PIC microcontrollers.
