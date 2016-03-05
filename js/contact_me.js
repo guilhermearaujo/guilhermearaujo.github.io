@@ -11,6 +11,7 @@ $(function() {
       var name = $("input#name").val();
       var email = $("input#email").val();
       var phone = $("input#phone").val();
+      var gotcha = $("input#_gotcha").val();
       var message = $("textarea#message").val();
       var firstName = name; // For Success/Failure Message
       // Check for white space in name for Success/Fail message
@@ -18,14 +19,16 @@ $(function() {
         firstName = name.split(' ').slice(0, -1).join(' ');
       }
       $.ajax({
-        url: "././mail/contact_me.php",
-        type: "POST",
+        url: "//formspree.io/contact@guilhermearaujo.me",
+        method: "POST",
         data: {
           name: name,
           phone: phone,
           email: email,
-          message: message
+          message: message,
+          _gotcha: gotcha
         },
+        dataType: "json",
         cache: false,
         success: function() {
           // Success message
@@ -33,7 +36,11 @@ $(function() {
           $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
           .append("</button>");
           $('#success > .alert-success')
-          .append("<strong>Your message has been sent. </strong>");
+          .append("<strong>")
+          $('#success > .alert-success')
+          .append(firstName)
+          $('#success > .alert-success')
+          .append(", thank you for your message.</strong>");
           $('#success > .alert-success')
           .append('</div>');
 
