@@ -7,7 +7,7 @@
 
 - image: minerva.png
   date: December 2013
-  headline: Bachelor of Electric Engineering
+  headline: Bachelor of Electrical Engineering
   text: >
     After six years, receives the undergraduate degree.<br />
     Develops, for the Graduation project, an Automated Storage and Retrieval System model for libraries. It comprises a functional transelevator scale model, its circuitry and control systems and a web interface for books and reservations management.
@@ -43,6 +43,6 @@
   date: February 2008
   headline: Enter the academic world
   text: >
-    Begins studies in Electric Engineering at <a href="http://www.poli.usp.br" target="_blank">Escola Politécnica</a> da <a href="http://www.usp.br" target="_blank">Universidade de São Paulo</a>.<br />
+    Begins studies in Electrical Engineering at <a href="http://www.poli.usp.br" target="_blank">Escola Politécnica</a> da <a href="http://www.usp.br" target="_blank">Universidade de São Paulo</a>.<br />
     First contact with programming languages, beginning with C and Python.<br />
     Starts tinkering with embedded systems such as Arduino and PIC microcontrollers.
