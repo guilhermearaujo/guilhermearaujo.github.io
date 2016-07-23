@@ -7,8 +7,7 @@
 
 # Site settings
 title: Guilherme Araújo
-description: > # this means to ignore newlines until "baseurl:"
-  Mobile Developer
+description: Mobile Developer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.guilhermearaujo.me" # the base hostname & protocol for your site
 
