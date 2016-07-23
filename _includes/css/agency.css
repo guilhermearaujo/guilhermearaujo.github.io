@@ -466,6 +466,10 @@ section h3.section-subheading {
   clear: both;
 }
 
+.timeline>li:last-child:after {
+  clear: none;
+}
+
 .timeline>li .timeline-panel {
   float: right;
   position: relative;
