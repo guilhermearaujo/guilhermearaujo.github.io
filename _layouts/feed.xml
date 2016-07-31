@@ -12,7 +12,7 @@
       <title>boleto.js</title>
       <description>The easiest way to display your barcodes</description>
       <link>{{ "/boleto.js" | prepend: site.baseurl | prepend: site.url }}</link>
-      <guid isPermaLink="true">{{ "/boleto.js" | prepend: site.baseurl | prepend: site.url }}</guid>
+      <guid isPermaLink="true">{{ "/boleto.js/" | prepend: site.baseurl | prepend: site.url }}</guid>
     </item>
     {% for post in site.posts limit:10 %}
       <item>
