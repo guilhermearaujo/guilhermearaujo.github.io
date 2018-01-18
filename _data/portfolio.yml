@@ -1,0 +1,29 @@
+- image: eduk-ios.png
+  title: eduK
+  subtitle: iOS app
+  url: //itunes.apple.com/app/eduk-cursos-online/id1223724933
+
+- image: eduk-web.png
+  title: eduK
+  subtitle: Website and APIs
+  url: //eduk.com.br
+
+- image: boletojs.png
+  title: boleto.js
+  subtitle: Barcodes made easy
+  url: /boleto.js/
+
+- image: tab-pager.png
+  title: GUITabPagerViewController
+  subtitle: Pager view with tabs for iOS
+  url: //github.com/guilhermearaujo/GUITabPagerViewController
+
+- image: bumbo.png
+  title: Bumbo
+  subtitle: A swifty client for Thumbor
+  url: /Bumbo
+
+- image: isp-monitor.png
+  title: ISPMonitor
+  subtitle: Internet speed test every hour
+  url: //twitter.com/anethoje
