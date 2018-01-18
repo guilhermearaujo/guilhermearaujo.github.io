@@ -11,7 +11,7 @@
       <div class="col-lg-12">
         <ul class="timeline">
           {% for entry in site.data.about %}
-            <li {% cycle nil, 'class="timeline-inverted"' %}>
+            <li {% cycle '', 'class="timeline-inverted"' %}>
               <div class="timeline-image">
                 <img class="img-circle img-responsive" src="img/about/{{ entry.image }}" alt="">
               </div>
