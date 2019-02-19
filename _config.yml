@@ -15,8 +15,8 @@ github_username:  guilhermearaujo
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: fed136
-  secondary: fec503
+  primary: ffc10f
+  secondary: ffb834
   secondary-dark: 333
 
 # Build settings
