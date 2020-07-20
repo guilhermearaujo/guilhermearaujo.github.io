@@ -7,57 +7,50 @@ $(function() {
     },
     submitSuccess: function($form, event) {
       event.preventDefault(); // prevent default submit behaviour
-      // get values from FORM
-      var name = $("input#name").val();
-      var email = $("input#email").val();
-      var phone = $("input#phone").val();
-      var gotcha = $("input#_gotcha").val();
-      var message = $("textarea#message").val();
-      var firstName = name; // For Success/Failure Message
+
+      var firstName = $("input[name='name']").val(); // For Success/Failure Message
       // Check for white space in name for Success/Fail message
       if (firstName.indexOf(' ') >= 0) {
-        firstName = name.split(' ').slice(0, -1).join(' ');
+        firstName = firstName.split(' ').slice(0, -1).join(' ');
       }
-      $.ajax({
-        url: "https://formspree.io/mlepoqgp",
-        method: "POST",
-        data: {
-          name: name,
-          phone: phone,
-          email: email,
-          message: message,
-          _gotcha: gotcha
-        },
-        dataType: "json",
-        cache: false,
-        success: function() {
+
+      var url = "https://formspree.io/mlepoqgp";
+      var data = new FormData($('#contactForm')[0]);
+
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", url);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
           // Success message
           $('#success').html("<div class='alert alert-success'>");
-          $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-          .append("</button>");
           $('#success > .alert-success')
-          .append("<strong>")
+            .html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+            .append("</button>");
           $('#success > .alert-success')
-          .append(firstName)
+            .append("<strong>")
           $('#success > .alert-success')
-          .append(", thank you for your message.</strong>");
+            .append(firstName)
           $('#success > .alert-success')
-          .append('</div>');
-
-          //clear all fields
-          $('#contactForm').trigger("reset");
-        },
-        error: function() {
+            .append(", thank you for your message.</strong>");
+          $('#success > .alert-success')
+            .append('</div>');
+        } else {
           // Fail message
           $('#success').html("<div class='alert alert-danger'>");
-          $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-          .append("</button>");
+          $('#success > .alert-danger')
+            .html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+            .append("</button>");
           $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
           $('#success > .alert-danger').append('</div>');
-          //clear all fields
+
+          // Clear all fields
           $('#contactForm').trigger("reset");
-        },
-      })
+        }
+      };
+
+      xhr.send(data);
     },
     filter: function() {
       return $(this).is(":visible");
